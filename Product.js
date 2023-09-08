@@ -1,12 +1,13 @@
 import React from 'react';
-import './Style.css';
 
-function Product({ name, price, image}) {
+function Product({ name, price, Image}) {
   return (
     <div className="product">
-      <img src={image} className='Image' alt="Potato" />
+      <span>
+      <img className='pic' src={Image} alt= {name} />
       <h2>{name}</h2>
-      <p>Price: ${price}</p>
+      <p>Price: ₹{price}</p>
+      </span>
     </div>
   );
 }

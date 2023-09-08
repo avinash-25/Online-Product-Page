@@ -24,7 +24,11 @@ function ProductPage() {
       <SearchBar onSearch={handleSearch} />
       <div className="product-list">
         {filteredProducts.map((product) => (
-          <Product key={product.id} name={product.name} price={product.price} image={product.image} />
+          <Product 
+                   key={product.id}
+                   name={product.name} 
+                   price={product.price} 
+                   Image={product.Image} />
         ))}
       </div>
     </div>
