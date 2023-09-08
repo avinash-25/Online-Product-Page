@@ -1,0 +1,35 @@
+
+[
+    {
+      "id": 1,
+      "name": "potato",
+      "price": 30,
+      "Image": "potato.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Sugar",
+      "price": 40
+    },
+    {
+      "id": 3,
+      "name": "Onion",
+      "price": 30
+    },
+    {
+      "id": 4,
+      "name": "pen",
+      "price": 5
+    },
+    {
+      "id": 5,
+      "name": "Rice",
+      "price": 80
+    },
+    {
+      "id": 6,
+      "name": "Milk",
+      "price": 40
+    }
+  ]
+  
