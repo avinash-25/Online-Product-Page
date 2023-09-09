@@ -9,14 +9,16 @@ import './Store.css';
 function ProductPage() {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
-  
+
   useEffect(() => {
+    // Initialize both products and filteredProducts with the data from productsData
     setProducts(productsData);
     setFilteredProducts(productsData);
   }, []);
 
   const handleSearch = (searchTerm) => {
-    const filtered = products.filter((product) =>
+    // Filter products based on the search term
+    const filtered = productsData.filter((product) =>
       product.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setFilteredProducts(filtered);
@@ -24,16 +26,20 @@ function ProductPage() {
 
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <SearchBar onSearch={handleSearch} />
       <div className='product-list'>
-      {productsData.map((product) => (
-        <Product key={product.id} name={product.name} 
-         price={product.price} 
-        imageUrl={product.imageUrl} />
-      ))}
-    </div>
-      <Footer/>
+        {/* Map and render products based on filteredProducts */}
+        {filteredProducts.map((product) => (
+          <Product
+            key={product.id}
+            name={product.name}
+            price={product.price}
+            imageUrl={product.imageUrl}
+          />
+        ))}
+      </div>
+      <Footer />
     </div>
   );
 }
