@@ -8,7 +8,7 @@ function SearchBar({ onSearch }) {
   };
 
   return (
-    <div>
+    <div className='search'>
       <input
         type="text"
         placeholder="Search products..."

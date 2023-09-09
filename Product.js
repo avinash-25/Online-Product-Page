@@ -1,13 +1,11 @@
 import React from 'react';
 
-function Product({ name, price, Image}) {
+function Product({ name, price, imageUrl }) {
   return (
     <div className="product">
-      <span>
-      <img className='pic' src={Image} alt= {name} />
+      <img className='pic' src={imageUrl} alt={name} />
       <h2>{name}</h2>
       <p>Price: ₹{price}</p>
-      </span>
     </div>
   );
 }

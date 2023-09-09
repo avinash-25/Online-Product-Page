@@ -2,34 +2,39 @@
 [
     {
       "id": 1,
-      "name": "potato",
+      "name": "Fries",
       "price": 30,
-      "Image": "potato.jpg"
+      "imageUrl": "./fries.jpg"
     },
     {
       "id": 2,
-      "name": "Sugar",
-      "price": 40
+      "name": "Gulab-Jamun",
+      "price": 40,
+      "imageUrl": "./gulabjamun.jpg"
     },
     {
       "id": 3,
-      "name": "Onion",
-      "price": 30
+      "name": "Pav-Bhaji",
+      "price": 30,
+      "imageUrl": "./pavbhaji.jpg"
     },
     {
       "id": 4,
-      "name": "pen",
-      "price": 5
+      "name": "Samosa",
+      "price": 5,
+      "imageUrl": "./samosa.jpg"
     },
     {
       "id": 5,
-      "name": "Rice",
-      "price": 80
+      "name": "Momos",
+      "price": 80,
+      "imageUrl": "./momos.jpg"
     },
     {
       "id": 6,
-      "name": "Milk",
-      "price": 40
+      "name": "Idli",
+      "price": 40,
+      "imageUrl": "./idli.jpg"
     }
   ]
   

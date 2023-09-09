@@ -1,16 +1,12 @@
 import React from 'react';
+import "./Store.css";
 
 function Footer() {
   return (
     <div>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
+       
         <footer>
-        <p>My Online Store</p>
+        <p className='footer'>My Online Store</p>
         </footer>
     </div>
   );

@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import Product from './Product';
 import SearchBar from './SearchBar';
 import productsData from './Product.json';
+import Navbar from './Navbar';
+import Footer from './Footer';
+import './Store.css';
 
 function ProductPage() {
   const [products, setProducts] = useState([]);
@@ -21,16 +24,16 @@ function ProductPage() {
 
   return (
     <div>
+      <Navbar/>
       <SearchBar onSearch={handleSearch} />
-      <div className="product-list">
-        {filteredProducts.map((product) => (
-          <Product 
-                   key={product.id}
-                   name={product.name} 
-                   price={product.price} 
-                   Image={product.Image} />
-        ))}
-      </div>
+      <div className='product-list'>
+      {productsData.map((product) => (
+        <Product key={product.id} name={product.name} 
+         price={product.price} 
+        imageUrl={product.imageUrl} />
+      ))}
+    </div>
+      <Footer/>
     </div>
   );
 }
