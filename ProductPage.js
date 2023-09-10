@@ -11,11 +11,13 @@ function ProductPage() {
   const [filteredProducts, setFilteredProducts] = useState([]);
 
   useEffect(() => {
+    // Initialize both products and filteredProducts with the data from productsData
     setProducts(productsData);
     setFilteredProducts(productsData);
   }, []);
 
   const handleSearch = (searchTerm) => {
+    // Filter products based on the search term
     const filtered = productsData.filter((product) =>
       product.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
@@ -27,6 +29,7 @@ function ProductPage() {
       <Navbar />
       <SearchBar onSearch={handleSearch} />
       <div className='product-list'>
+        {/* Map and render products based on filteredProducts */}
         {filteredProducts.map((product) => (
           <Product
             key={product.id}
